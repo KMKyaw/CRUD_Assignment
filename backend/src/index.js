@@ -77,7 +77,7 @@ app.post('/comment', createComment);
 
 app.patch('/comment', editComment);
 
-app.delete('/comment', deleteComment);
+app.delete('/comment/:commentId', deleteComment);
 
 app.listen('8000', () => {
   console.log('App is listenning on http://localhost:8000 ');
